@@ -6,41 +6,61 @@
         
         <style>
         
+            /* element selectors */
             main {
                 background-color: green;
             }
             
             main p {
-                background-color: red;
+            background-color: green;   
             }
             
+
+
+            /* class selectors 
+            .prime-paragraphs {
+                background-color: red;             
+            }
+                 */
+            
+            .first-paragraph {
+                background-color: blue;             
+            }
+       
+
+            /* id selectors */
+            #first-paragraph {
+                 background-color: blue;                 
+            }
+            
+     
         
         
         </style>
         
         
     </head>
-    <body>
+    <body class="home-page">
         <header>
             <h1>My first Website</h1>
         </header>
         <main style="color: white">
-            <p>
+            <p id="first-paragraph" class="first-paragraph prime-paragraphs">
             Lorem ipsum dolor sit amet, consectetuer adipiscing 
                 <a href="http://www.google.com" target="_blank">Google</a> 
                 elit. Aenean commodo ligula eget dolor. Aenean massa.
             </p>
             <img src="img/cat-694730_1920.jpg" width="100%" alt="Picture of a dog looking out of a car window">
-            <p style=""> 
+            <p id="second-paragraph" class="prime-paragraphs" style=""> 
                 Cum sociis natoque <span style="color: blue">penatibus</span> et <strong><em>magnis</em></strong> dis parturient montes, <strong>nascetur</strong> ridiculus mus. Donec quam felis, <b>ultricies</b> nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
             </p>
-            <p>
+            <p id="third-paragraph" class="prime-paragraphs">
             Some more text that is of course just as important as the text before.
             </p>
         </main>  
         <footer>
             <hr>
-            <p>
+            <p class="footer-paragraphs">
             &copy; 2019 Enno Hyttrek
             </p>
         </footer>
