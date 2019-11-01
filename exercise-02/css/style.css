@@ -1,0 +1,96 @@
+/*
+Styleshhet for exercise 2 in the MAT 22b class at DCI Oct/Nov 2019.
+Author: Enno Hyttrek
+*/
+
+/*
+Reset
+*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+Navigation
+*/ 
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.main-nav ul li {
+   margin-right: 10px; 
+}
+
+.main-nav ul li a {
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: orange;
+    color: white;
+    padding: 3px 6px;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    background-color: red;
+    color: black;
+}
+
+/*
+Color
+*/ 
+
+body,
+footer p {
+    background-color: rgb(30,30,30);    
+}
+
+header {
+    background-color: rgb(200,200,200);
+}
+
+main {
+    background-color: rgb(230,230,230);
+}
+
+p {
+    background-color: rgb(255,255,255);
+}
+
+
+footer {
+    color: #fff;
+
+}
+
+/*
+Typography
+*/ 
+
+/*
+Layout
+*/ 
+
+header {
+    height: 15vw; /*vw stands for Viewport Width*/
+}
+
+main {
+    min-height: 70vh;
+}
+
+p {
+    width: 30%;
+}
+
