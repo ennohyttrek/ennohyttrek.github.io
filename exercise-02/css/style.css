@@ -4,6 +4,12 @@ Author: Enno Hyttrek
 */
 
 /*
+Imports
+*/
+@import url('https://fonts.googleapis.com/css?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,800&display=swap');
+
+/*
 Reset
 */ 
 * {
@@ -48,7 +54,7 @@ Navigation
 }
 
 /*
-Color
+Color & Style
 */ 
 
 body,
@@ -57,15 +63,35 @@ footer p {
 }
 
 header {
+    color: #fff;
+    background-image: url(../img/halloween-4537430_1280.jpg);
+    background-size: cover;
+    background-position: center;
     background-color: rgb(200,200,200);
 }
 
-main {
-    background-color: rgb(230,230,230);
+.where header {
+    background-image: url(../img/el-dia-de-los-muertos-234236_1280.jpg);  
+        background-position: top;
 }
 
-p {
-    background-color: rgb(255,255,255);
+.why header {
+    background-image: url(../img/pumpkin-3636243_1280.jpg);    
+}
+
+main {
+    background-image: url(../img/animals-16908_640.jpg);
+    background-size: 20%;
+    background-color: rgb(230,230,230);
+}
+h2 {
+    color: rgb(200,100,0);
+    background-color: rgba(255,255,255,0.7)
+}
+
+p,h3 {
+    color: #fff;
+    background-color: rgba(255,128,0,0.9);
 }
 
 
@@ -78,19 +104,67 @@ footer {
 Typography
 */ 
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 3em;
+}
+
+h2,h3,h4,h5,h6 {
+     font-weight: 500;   
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2em;
+}
+
+h3 {
+    text-transform: uppercase;    
+}
+
+p {
+    font-weight: 300;
+}
+
 /*
 Layout
 */ 
 
+h1,h2,h3,h4,h5,h6,
+p,ul,ol {
+    padding-left: 20px;  
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+}
+
+h1 {
+    padding-top: 1.5em;  
+}
+
 header {
-    height: 15vw; /*vw stands for Viewport Width*/
+    height: 25vw; /*vw stands for Viewport Width*/
 }
 
 main {
     min-height: 70vh;
 }
 
-p {
-    width: 30%;
+p,h3 {
+width: 80%;
+    margin-bottom: 0.5em;
+    padding-right: 1em;
+}
+
+article p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+aside p {
+    font-size: 0.8em;
 }
 
