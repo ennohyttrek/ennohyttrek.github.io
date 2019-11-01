@@ -1,0 +1,79 @@
+ /*
+Reset
+*/   
+
+a {
+    color: black;
+    text-decoration: none
+}
+
+ /*
+Color
+*/ 
+
+            main {
+                background-color: green;
+                color: white;
+            }
+            
+            main p {
+            background-color: green;   
+            }
+            
+
+            
+            .first-paragraph {
+                background-color: blue;             
+            }
+       
+
+ /*
+Layout
+*/ 
+
+ /*
+Navigation
+*/ 
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.main-nav ul li {
+   margin-right: 10px; 
+}
+
+.main-nav ul li a {
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: orange;
+    color: white;
+    padding: 3px 6px;
+}
+
+.main-nav ul li a:hover {
+    background-color: red;
+    color: black;
+}
+
+
+
+
+ /*
+Typography
+*/ 
+
+
+
+            
+     
+        
+        

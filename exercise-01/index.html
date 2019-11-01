@@ -3,39 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>My first Website</title>
+        <link rel="stylesheet" href="css/style.css">
         
         <style>
-        
-            /* element selectors */
-            main {
-                background-color: green;
-            }
-            
-            main p {
-            background-color: green;   
-            }
-            
 
-
-            /* class selectors 
-            .prime-paragraphs {
-                background-color: red;             
-            }
-                 */
-            
-            .first-paragraph {
-                background-color: blue;             
-            }
-       
-
-            /* id selectors */
-            #first-paragraph {
-                 background-color: blue;                 
-            }
-            
-     
-        
-        
         </style>
         
         
@@ -43,8 +14,17 @@
     <body class="home-page">
         <header>
             <h1>My first Website</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Experience</a></li>  
+                    <li><a href="#">Contact</a></li>                  
+                </ul>
+            </nav>
         </header>
-        <main style="color: white">
+        <main>
             <p id="first-paragraph" class="first-paragraph prime-paragraphs">
             Lorem ipsum dolor sit amet, consectetuer adipiscing 
                 <a href="http://www.google.com" target="_blank">Google</a> 
