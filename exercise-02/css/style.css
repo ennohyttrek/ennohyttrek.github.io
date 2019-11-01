@@ -90,10 +90,16 @@ h2 {
 }
 
 p,h3 {
-    color: #fff;
     background-color: rgba(255,128,0,0.9);
 }
 
+p,h3,main a {
+    color: #fff;    
+} 
+
+main a:hover {
+    color: rgb(200,0,0);
+}
 
 footer {
     color: #fff;
