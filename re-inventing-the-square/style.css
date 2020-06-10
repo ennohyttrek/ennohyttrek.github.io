@@ -57,9 +57,10 @@ nav.main-nav ul li:last-child {
 }
 
 section {
-    padding: 10vw 0;
+display: flex;
+    align-items: center;
     background-color: rgb(230,235,240);
-    min-height: 50vw;
+    height: calc(var(--start-size) + 5vw);
 }
 
 /*square before the transition*/
@@ -81,7 +82,7 @@ section:hover figure.ehy-square {
     height: var(--end-size);
     transform: rotate(var(--end-rotate));
     transition-duration: 1s;
-    margin-left: calc(100vw - var(--end-size));
+    margin-left: calc(95vw - var(--end-size));
     background-color: var(--end-color);
     border-radius: var(--end-radius);
     font-size: calc(var(--end-size) / 6);
