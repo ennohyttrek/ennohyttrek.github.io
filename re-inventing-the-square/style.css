@@ -1,0 +1,93 @@
+/*
+Stylesheet for the Re-Inventing the Square animation examples
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i,700&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.current-menu-item a,
+a:hover {
+    color: rgb(255, 128, 0);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2 {
+    padding: 1rem;
+}
+
+/*
+Navigation
+*/
+
+nav.main-nav {
+}
+
+nav.main-nav ul {
+    display: flex;
+    padding-left: 1rem;
+}
+
+nav.main-nav ul li {
+    list-style-type: none;
+    padding: 0 0.5em;
+    border-right: 1px solid #000;
+    
+}
+
+nav.main-nav ul li:first-child {
+    padding-left: 0;
+}
+
+nav.main-nav ul li:last-child {
+    border-right: none;
+}
+
+section {
+    padding: 10vw 0;
+    background-color: rgb(230,235,240);
+    min-height: 50vw;
+}
+
+/*square before the transition*/
+figure.ehy-square {
+    color: #fff;
+    width: var(--start-size);
+    height: var(--start-size);
+    margin-left: 0;
+    background-color: var(--start-color);
+    transform: rotate(var(--start-rotate));
+    border-radius: var(--start-radius);
+    font-size: calc(var(--start-size) / 6);
+    transition-duration: 1s;
+}
+
+/*square transition on rollover of parent container*/
+section:hover figure.ehy-square {
+    width: var(--end-size);
+    height: var(--end-size);
+    transform: rotate(var(--end-rotate));
+    transition-duration: 1s;
+    margin-left: calc(100vw - var(--end-size));
+    background-color: var(--end-color);
+    border-radius: var(--end-radius);
+    font-size: calc(var(--end-size) / 6);
+}
+
+figure.ehy-square p {
+    text-align: center;
+    padding: 0.3em;
+}
