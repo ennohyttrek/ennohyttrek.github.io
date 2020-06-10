@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Re-Inventing the Square</title>
+
+        <style>
+            :root {
+                --start-size: 30vw;
+                --end-size: 30vw;
+                --start-rotate: 0deg;
+                --end-rotate: 90deg;                
+                --start-radius: 0%;
+                --end-radius: 0%;
+                --start-color: rgb(0,0,0);
+                --end-color: rgb(0,0,0);;
+                
+            }
+
+            @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i,700&display=swap");
+            /*font-family: 'Roboto', sans-serif;*/
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Roboto", sans-serif;
+            }
+            
+            h1 {
+                padding: 1em;
+            }
+            
+
+            section {
+                padding: 10vw 0;
+            }
+
+            /*square before the transition*/
+            figure.ehy-square {
+                color: #fff;
+                width: var(--start-size);
+                height: var(--start-size);
+                margin-left: 0;
+                background-color: var(--start-color);
+                transform: rotate(var(--start-rotate));
+                border-radius: var(--start-radius);
+               font-size: calc(var(--start-size)/6);                
+                transition-duration: 1s;
+            }
+
+            /*square transition on rollover of parent container*/
+            section:hover figure.ehy-square {
+                width: var(--end-size);
+                height: var(--end-size);
+                transform: rotate(var(--end-rotate));
+                transition-duration: 1s;
+                margin-left: calc(100vw - var(--end-size));
+                background-color: var(--end-color);
+                border-radius: var(--end-radius);
+                font-size: calc(var(--end-size)/6);
+            }
+            
+            figure.ehy-square p {
+                text-align: center;
+                padding: 0.3em;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>Re-Inventing the Square: Animation</h1>
+
+        <section>
+            <figure class="ehy-square">
+            <p>Up</p>
+            </figure>
+        </section>
+    </body>
+</html>
