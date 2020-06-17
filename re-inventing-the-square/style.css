@@ -11,6 +11,17 @@ Stylesheet for the Re-Inventing the Square animation examples
     box-sizing: border-box;
 }
 
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+
+/*---------------------
+Navigation
+---------------------*/
+
 a {
     text-decoration: none;
     color: #000;
@@ -21,12 +32,42 @@ a:hover {
     color: rgb(255, 128, 0);
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+
+nav.main-nav ul {
+    display: flex;
+    padding-left: 1rem;
 }
 
-h1,h2,p {
+nav.main-nav ul li {
+    list-style-type: none;
+    padding: 0 0.5em;
+    border-right: 1px solid #000;
+
+}
+
+nav.main-nav ul li:first-child {
+    padding-left: 0;
+}
+
+nav.main-nav ul li:last-child {
+    border-right: none;
+}
+
+.red-button {
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 auto;
+}
+
+
+
+/*---------------------
+Layout
+---------------------*/
+
+h1,
+h2,
+p {
     padding: 1rem;
 }
 
@@ -39,68 +80,24 @@ footer p {
     font-size: 0.8em;
 }
 
-/*
-Navigation
-*/
-
-nav.main-nav {
-}
-
-nav.main-nav ul {
-    display: flex;
-    padding-left: 1rem;
-}
-
-nav.main-nav ul li {
-    list-style-type: none;
-    padding: 0 0.5em;
-    border-right: 1px solid #000;
-    
-}
-
-nav.main-nav ul li:first-child {
-    padding-left: 0;
-}
-
-nav.main-nav ul li:last-child {
-    border-right: none;
-}
-
-.red-button {
-
-
-    border-radius: 50%;
-    background-color: red;
-    margin: 0 auto;
-}
-
-section {
-display: flex;
-    align-items: center;
-
-
-}
-
-/*
-Layout
-*/
-
 h1 {
     height: 12vh;
 
 }
 
 h2 {
-     height: 6vh;   
+    height: 6vh;
 }
 
 nav {
     height: 12vh;
- 
+
 }
 
 section {
     height: 50vh;
+    display: flex;
+    align-items: center;
 }
 
 .red-button {
@@ -109,12 +106,20 @@ section {
     margin-top: 3vh;
 }
 
-figure {
-     color: #fff;   
+figure p {
+    text-align: center;
+    padding: 0.3em;
 }
 
-/*square before the transition*/
-/*figure,*/
+
+/*---------------------
+ANIMATION
+---------------------*/
+
+
+/**--------
+square start state
+--------**/
 .start {
     width: var(--start-size);
     height: var(--start-size);
@@ -126,8 +131,9 @@ figure {
     transition-duration: 1s;
 }
 
-/*square transition on rollover of parent container*/
-/*section:hover figure,*/
+/**--------
+square end state
+--------**/
 .end {
     width: var(--end-size);
     height: var(--end-size);
@@ -137,25 +143,33 @@ figure {
     background-color: var(--end-color);
     border-radius: var(--end-radius);
     font-size: calc(var(--end-size) / 6);
-        transition-duration: 1s;
+    transition-duration: 1s;
 }
 
-figure p {
-    text-align: center;
-    padding: 0.3em;
+/*---------------------
+STYLE & COLOUR
+---------------------*/
+
+figure {
+    color: white;
 }
 
-/*
-Mobile
-*/
+/*---------------------
+MOBILE
+---------------------*/
 
 @media only screen and (max-width: 600px) {
+
+    body {
+        font-size: 0.8em;
+    }
     
-        h1 {
+    h1 {
         font-size: 1.7em;
     }
+
     h2 {
         font-size: 1.2em;
     }
-    
+
 }
