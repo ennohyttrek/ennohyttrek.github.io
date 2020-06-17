@@ -33,7 +33,6 @@ h1,h2,p {
 footer {
     position: fixed;
     bottom: 0;
-    background-color: rgba(255,255,255,0.8);
 }
 
 footer p {
@@ -67,16 +66,56 @@ nav.main-nav ul li:last-child {
     border-right: none;
 }
 
+.red-button {
+
+
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 auto;
+}
+
 section {
 display: flex;
     align-items: center;
-    background-color: rgb(230,235,240);
-    height: calc(var(--start-size) + 5vw);
+
+
+}
+
+/*
+Layout
+*/
+
+h1 {
+    height: 12vh;
+
+}
+
+h2 {
+     height: 6vh;   
+}
+
+nav {
+    height: 12vh;
+ 
+}
+
+section {
+    height: 50vh;
+}
+
+.red-button {
+    height: 10vh;
+    width: 10vh;
+    margin-top: 3vh;
+}
+
+figure {
+     color: #fff;   
 }
 
 /*square before the transition*/
-figure.ehy-square {
-    color: #fff;
+/*figure,*/
+.start {
     width: var(--start-size);
     height: var(--start-size);
     margin-left: 0;
@@ -88,7 +127,8 @@ figure.ehy-square {
 }
 
 /*square transition on rollover of parent container*/
-section:hover figure.ehy-square {
+/*section:hover figure,*/
+.end {
     width: var(--end-size);
     height: var(--end-size);
     transform: rotate(var(--end-rotate));
@@ -97,9 +137,25 @@ section:hover figure.ehy-square {
     background-color: var(--end-color);
     border-radius: var(--end-radius);
     font-size: calc(var(--end-size) / 6);
+        transition-duration: 1s;
 }
 
-figure.ehy-square p {
+figure p {
     text-align: center;
     padding: 0.3em;
+}
+
+/*
+Mobile
+*/
+
+@media only screen and (max-width: 600px) {
+    
+        h1 {
+        font-size: 1.7em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    
 }

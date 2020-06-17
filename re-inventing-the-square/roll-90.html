@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Re-Inventing the Square</title>
-        <link rel="stylesheet" href="style.css" />
 
-        <style>
-            :root {
-                --start-size: 30vw;
-                --end-size: 30vw;
-                --start-rotate: 0deg;
-                --end-rotate: 90deg;
-                --start-radius: 0%;
-                --end-radius: 0%;
-                --start-color: rgb(0, 0, 0);
-                --end-color: rgb(0, 0, 0);
-            }
-        </style>
-    </head>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Re-Inventing the Square</title>
+    <link rel="stylesheet" href="style.css" />
 
-    <body>
-        <h1>Re-Inventing the Square: Animation</h1>
+    <style>
+        :root {
+            --start-size: 30vh;
+            --end-size: 30vh;
+            --start-rotate: 0deg;
+            --end-rotate: 90deg;
+            --start-radius: 0%;
+            --end-radius: 0%;
+            --start-color: rgb(0, 0, 0);
+            --end-color: rgb(0, 0, 0);
+        }
 
-        <nav class="main-nav">
-            <ul>
-                <li class="current-menu-item">
-                    <a href="#">Roll 90°</a>
-                </li>
-                <li><a href="roll-720.html">Roll 720°</a></li>
-                <li>
-                    <a href="roll-720-morph-circle.html"
-                        >Roll 720° morph to circle</a
-                    >
-                </li>
-                <li>
-                    <a href="roll-720-morph-circle-scale.html"
-                        >Roll 720° morph to circle and scale</a
-                    >
-                </li>
-                <li>
-                    <a href="roll-720-morph-circle-scale-colour.html"
-                        >Roll 720° morph to circle, scale and change colour</a
-                    >
-                </li>
-            </ul>
-        </nav>
+    </style>
 
-        <h2>Roll over the grey area to animate the square!</h2>
+    <script src="functions.js"></script>
+</head>
 
-        <section>
-            <figure class="ehy-square">
-                <p>Up</p>
-            </figure>
-        </section>
-        <footer><p>&copy;2020 Enno Hyttrek. All rights reserved.</p></footer>
-<!-- Default Statcounter code for Github ennohyttrek http://ennohyttrek.github.io --> <script type="text/javascript"> var sc_project=12342931;  var sc_invisible=1;  var sc_security="56ab4f10";  </script> <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script> <noscript><div class="statcounter"><a title="site stats" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12342931/0/56ab4f10/1/" alt="site stats"></a></div></noscript> <!-- End of Statcounter Code --> </body>
+<body>
+    <h1>Re-Inventing the Square: Animation</h1>
+
+    <nav class="main-nav">
+        <ul>
+            <li class="current-menu-item">
+                <a href="#">Roll 90°</a>
+            </li>
+            <li><a href="roll-720.html">Roll 720°</a></li>
+            <li>
+                <a href="roll-720-morph-circle.html">Roll 720° morph to circle</a>
+            </li>
+            <li>
+                <a href="roll-720-morph-circle-scale.html">Roll 720° morph to circle and scale</a>
+            </li>
+            <li>
+                <a href="roll-720-morph-circle-scale-colour.html">Roll 720° morph to circle, scale and change colour</a>
+            </li>
+        </ul>
+    </nav>
+
+          <h2>Press the red button to animate the square!</h2>
+
+    <section>
+        <figure id="square" class="start">
+            <p>Up</p>
+        </figure>
+    </section>
+    
+    <div class="red-button" onclick="moveMe()"></div>
+    <footer>
+        <p>&copy;2020 Enno Hyttrek. All rights reserved.</p>
+    </footer>
+    <!-- Default Statcounter code for Github ennohyttrek http://ennohyttrek.github.io -->
+    <script type="text/javascript">
+        var sc_project = 12342931;
+        var sc_invisible = 1;
+        var sc_security = "56ab4f10";
+
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script> <noscript>
+        <div class="statcounter"><a title="site stats" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12342931/0/56ab4f10/1/" alt="site stats"></a></div>
+    </noscript> <!-- End of Statcounter Code -->
+</body>
+
 </html>
