@@ -1,9 +1,24 @@
-/*
+/*=====================
 Stylesheet for the Re-Inventing the Square animation examples
-*/
+©2020 Enno Hyttrek
+studio@ennohyttrek.de
+=====================*/
+
+/*---------------------
+IMPORTS
+---------------------*/
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i,700&display=swap");
 /*font-family: 'Roboto', sans-serif;*/
+
+
+/*---------------------
+RESET & INIT
+---------------------*/
+
+:root {
+    --start-size: 30vh;
+}
 
 * {
     margin: 0;
@@ -19,7 +34,7 @@ body {
 
 
 /*---------------------
-Navigation
+NAVIGATION
 ---------------------*/
 
 a {
@@ -81,16 +96,17 @@ footer p {
 }
 
 h1 {
-    height: 12vh;
+    height: 15vh;
 
 }
 
 h2 {
-    height: 6vh;
+    height: 5vh;
 }
 
 nav {
-    height: 12vh;
+    height: 10vh;
+    line-height: 1.1;
 
 }
 
@@ -165,7 +181,7 @@ MOBILE
     }
     
     h1 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     h2 {
