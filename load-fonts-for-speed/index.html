@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Speed Test Google/Adobe Fonts @import vs link vs asynchron mit JS</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+        * {
+            margin. 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+
+                        color: rgb(255, 128, 0);
+            text-decoration: none;
+
+        }
+
+        a:hover {
+                        color: #000;
+            text-decoration: underline;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        h1 {}
+
+        h2 {
+            font-size: 1em;
+        }
+
+        h1,
+        h2,
+        p,
+        ul {
+            padding: 1rem;
+        }
+        
+        ul a {
+                        font-weight: 500;
+        }
+        
+        ul li {
+            list-style-type: none;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <H1>Kleiner Test, wie Webfonts (Adobe bzw. Google) Pagespeed beeinflussen</H1>
+    <p>
+        Genauer gesagt: welche Art des Ladens der Fonts am schnellsten ist. Basiert auf eigenen Erfahrungen/Praktiken und auf <a href="https://www.lockedownseo.com/load-google-fonts-asynchronously-for-page-speed/" target="_blank">diesem Artikel hier</a>. Zum selbst testen: Link in untenstehender Liste zur jeweiligen Option folgen. Dann URL bei <a href="https://developers.google.com/speed" target="_blank">Google Pagespeed eingeben</a>.
+    </p>
+
+    <ul>
+        <li><a href="googlefonts-head-link/">Google Fonts per link</a></li>
+        <li><a href="googlefonts-css/">Google Fonts per @import</a></li>
+        <li><a href="googlefonts-js-script/">Google Fonts per Javascript</a></li>
+        <li><a href="typekit-head-link/">Adobe Fonts per link</a></li>
+        <li><a href="typekit-css/">Adobe Fonts per @import</a></li>
+        <li><a href="typekit-js-script/">Adobe Fonts per Javascript</a></li>
+
+
+    </ul>
+
+</body>
+
+</html>
