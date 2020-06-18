@@ -23,22 +23,45 @@ a {
 COLOUR & STYLE
 ---------------------*/
 
+:root {
+    --light-type: rgb(220,230,240);
+    --dark-type: rgb(40,50,70);
+    --light-back: rgb(220,230,240);
+    --medium-back: rgb(110,120,130);
+    --dark-back:  rgb(40,50,70);
+}
+
 nav {
     background-color: rgba(40,50,70,0.7);
 }
 
 nav a {
-        color: rgb(220,230,240);
+        color: var(--light-type);
 }
 
 nav a:hover {
         color: #fff;
 }
 
-.parent {
-    background-color: red;
-    border: 1px solid white;
+body {
+     background-color: rgb(40,50,70);   
 }
+
+
+header {
+    background-color: var(--light-back);
+    color: var(--dark-type);
+}
+
+main {
+    background-color: #fff;
+}
+
+footer {
+    color: var(--light-type);
+}
+
+
 
 /*---------------------
 NAVIGATION
@@ -83,8 +106,17 @@ p,ul {
     padding: 0 42px;
 }
 
-header h1 {
-    padding-top: 5rem;
+header {
+    padding: 5rem 0 1rem 0;;
+
+}
+
+footer {
+    padding: 1rem 0;
+}
+
+main {
+    min-height: 70vh;
 }
 
 /*---------------------
