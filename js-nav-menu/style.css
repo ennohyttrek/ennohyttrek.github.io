@@ -1,0 +1,97 @@
+/*---------------------
+IMPORTS
+---------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i,700&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+
+/*---------------------
+RESET
+---------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------------------
+COLOUR & STYLE
+---------------------*/
+
+nav {
+    background-color: rgba(40,50,70,0.7);
+}
+
+nav a {
+        color: rgb(220,230,240);
+}
+
+nav a:hover {
+        color: #fff;
+}
+
+.parent {
+    background-color: red;
+    border: 1px solid white;
+}
+
+/*---------------------
+NAVIGATION
+---------------------*/
+
+nav.main-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav.main-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+}
+
+nav.main-menu ul li {
+    margin-right: 1em;
+    padding: 0.3rem;
+    
+}
+
+
+nav.main-menu ul li a {
+    font-size 1rem;
+    
+}
+
+
+nav.main-menu ul li a:hover {
+    
+}
+
+/*---------------------
+LAYOUT
+---------------------*/
+
+h1,h2,h3,h4,h5,h6,
+p,ul {
+    padding: 0 42px;
+}
+
+header h1 {
+    padding-top: 5rem;
+}
+
+/*---------------------
+TYPOGRAPHY
+---------------------*/
+
+body {
+font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    }
