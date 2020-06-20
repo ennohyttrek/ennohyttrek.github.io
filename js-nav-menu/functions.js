@@ -6,16 +6,13 @@ function createMenu() {
 <li id="nav-item-4"  class="nav-item" onclick="makeCurrent(this.id)"><a href="page-03.html">Page Three</a></li>
 `;
     document.getElementById('main-nav').appendChild(ul);
-    // document.getElementById(sessionStorage.getItem('myCurrent')).style.backgroundColor = 'red';
     var y = sessionStorage.getItem('myCurrent');
     document.getElementById(y).className = 'nav-item-current';
 }
 
 
 function makeCurrent(clicked_id) {
-  x = clicked_id;
-  sessionStorage.setItem('myCurrent', x);
-        document.getElementById(x).className = 'nav-item';
-} 
-
-
+    x = clicked_id;
+    sessionStorage.setItem('myCurrent', x);
+    document.getElementById(x).className = 'nav-item';
+}
