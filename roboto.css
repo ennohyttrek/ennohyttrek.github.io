@@ -1,0 +1,12 @@
+/*=====================
+Stylesheet for Github Pages repository ennohyttrek.github.io
+Author: Enno Hyttrek, studio@ennohyttrek.de
+==============*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i,700&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+
+body {
+font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}

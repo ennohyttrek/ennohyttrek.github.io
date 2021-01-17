@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mobile menu without JavaScript</title>
+    <link rel="stylesheet" href="../roboto.css">
 
     <style>
         /*RESET*/
@@ -11,7 +12,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: sans-serif;
         }
 
 
@@ -100,7 +100,8 @@
             color: hsl(200, 13%, 89%);
         }
 
-        header {
+        header,
+        nav.main-nav {
             background: hsl(200, 13%, 42%);
             color: hsl(200, 34%, 89%);
         }
@@ -114,14 +115,22 @@
         /**C&S Burger Icon **/
 
         nav.burger-icon span {
-            background: hsl(200, 34%, 89%);;
+            background: hsl(200, 21%, 68%);
         }
 
         /**C&S Nav Mobile **/
 
         nav.main-nav a {
-            background: hsl(200, 13%, 42%);
             color: hsl(200, 34%, 89%);
+        }
+        
+                
+        nav.main-nav li {
+               border-bottom: 1px solid hsl(200, 13%, 13%);         
+        }
+        
+        nav.main-nav li:first-child {
+            border-top: 1px solid hsl(200, 13%, 13%);
         }
 
 
